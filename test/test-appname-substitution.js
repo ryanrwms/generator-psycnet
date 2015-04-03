@@ -7,7 +7,7 @@ var helpers = yeoman.test;
 var assert  = yeoman.assert;
 var fs      = require('fs');
 
-describe('Angular-RequireJS generator template mechanism', function () {
+describe('Psycnet generator template mechanism', function () {
   var appName = 'upperCaseBug';
 
   beforeEach(function (done) {
@@ -26,7 +26,7 @@ describe('Angular-RequireJS generator template mechanism', function () {
       .inDir(path.join(__dirname, 'tmp'), function () {
         var out = [
           '{',
-          '  "generator-angular-require": {',
+          '  "generator-psycnet": {',
           '    "appPath": "app",',
           '    "appName": "' + appName + '"',
           '  }',

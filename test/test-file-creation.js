@@ -9,7 +9,7 @@ var fs      = require('fs');
 var test    = require('./helper');
 var _       = require('underscore.string');
 
-describe('Angular-RequireJS generator appPath option', function () {
+describe('Psycnet generator appPath option', function () {
   var appPath = 'app';
   var appName = 'App';
   var expected = [
@@ -60,7 +60,7 @@ describe('Angular-RequireJS generator appPath option', function () {
       .inDir(path.join(__dirname, 'tmp'), function () {
         var out = [
           '{',
-          '  "generator-angular-require": {',
+          '  "generator-psycnet": {',
           '    "appPath": "app",',
           '    "appName": "' + appName + '"',
           '  }',

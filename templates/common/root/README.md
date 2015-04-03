@@ -1,6 +1,6 @@
 +# <%= _.slugify(_.humanize(appname)) %>
 +
-+This project is generated with [yo angular-require generator](https://github.com/aaronallport/generator-angular-require)
++This project is generated with [yo psycnet generator](https://github.com/ryanrwms/generator-psycnet)
 +version <%= pkg.version %>.
 +
 +## Build & development

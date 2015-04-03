@@ -8,7 +8,7 @@ var assert  = yeoman.assert;
 var fs      = require('fs');
 var test    = require('./helper.js');
 
-describe('Angular-RequireJS generator route mechanism', function () {
+describe('Psycnet generator route mechanism', function () {
   var route = 'simpleroute';
   this.angularRequire = {};
 
@@ -49,7 +49,7 @@ describe('Angular-RequireJS generator route mechanism', function () {
       .inDir(path.join(__dirname, 'tmp'), function () {
         var out = [
           '{',
-          '  "generator-angular-require": {',
+          '  "generator-psycnet": {',
           '    "appPath": "app",',
           '    "appName": "App"',
           '  }',
