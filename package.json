@@ -42,9 +42,9 @@
     "test": "mocha"
   },
   "dependencies": {
-    "yeoman-generator": "~0.17.0",
-    "bower-requirejs": "~1.1.2",
-    "yosay": "^1.0.0",
+    "yeoman-generator": "~0.18.0",
+    "bower-requirejs": "1.1.x",
+    "yosay": "1.0.x",
     "chalk": "^0.5.1",
     "wiredep": "~2.2.0"
   },
@@ -56,11 +56,11 @@
     "mocha": "*",
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.11.0",
-    "grunt-conventional-changelog": "~1.1.0",
+    "grunt-conventional-changelog": "~1.2.0",
     "load-grunt-tasks": "~3.1.0",
-    "semver": "~4.2.0",
+    "semver": "~4.3.0",
     "underscore.string": "~3.0.0",
-    "grunt-release": "~0.11.0"
+    "grunt-release": "~0.12.0"
   },
   "engines": {
     "node": ">=0.10.0",
