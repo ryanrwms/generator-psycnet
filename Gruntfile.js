@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         commitMessage: 'chore(release): Release version <%= version %>',
         file: 'package.json',
         github: {
-          repo: 'aaronallport/generator-angular-require',
+          repo: 'ryanrwms/generator-psycnet',
           usernameVar: 'GITHUB_USERNAME',
           passwordVar: 'GITHUB_AUTHTOKEN'
         },

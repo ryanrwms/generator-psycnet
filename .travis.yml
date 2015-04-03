@@ -5,4 +5,4 @@ node_js:
   - '0.12'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-angular-require' ]; then cd .. && eval "mv $currentfolder generator-angular-require" && cd generator-angular-require; fi
+  - if [ "$currentfolder" != 'generator-psycnet' ]; then cd .. && eval "mv $currentfolder generator-psycnet" && cd generator-psycnet; fi

@@ -1,15 +1,15 @@
 # AngularJS-RequireJS generator
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/aaronallport/generator-angular-require.svg?branch=master)](https://travis-ci.org/aaronallport/generator-angular-require) [![Dependency status](https://david-dm.org/aaronallport/generator-angular-require/status.png)](https://david-dm.org/aaronallport/generator-angular-require#info=dependencies&view=table) [![Dev Dependency Status](https://david-dm.org/aaronallport/generator-angular-require/dev-status.png)](https://david-dm.org/aaronallport/generator-angular-require#info=devDependencies&view=table) [![Peer Dependency Status](https://david-dm.org/aaronallport/generator-angular-require/peer-status.png)](https://david-dm.org/aaronallport/generator-angular-require#info=peerDependencies&view=table)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/ryanrwms/generator-psycnet.svg?branch=master)](https://travis-ci.org/ryanrwms/generator-psycnet) [![Dependency status](https://david-dm.org/ryanrwms/generator-psycnet/status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=dependencies&view=table) [![Dev Dependency Status](https://david-dm.org/ryanrwms/generator-psycnet/dev-status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=devDependencies&view=table) [![Peer Dependency Status](https://david-dm.org/ryanrwms/generator-psycnet/peer-status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=peerDependencies&view=table)
 
 > Yeoman generator for AngularJS using RequireJS - lets you quickly set up a project with sensible defaults and best practices.
 
 
 ## Usage
 
-Install `generator-angular-require`:
+Install `generator-psycnet`:
 ```
-npm install -g generator-angular-require
+npm install -g generator-psycnet
 ```
 
 Make a new directory, and `cd` into it:
@@ -17,9 +17,9 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd $_
 ```
 
-Run `yo angular-require`, optionally passing an app name:
+Run `yo psycnet`, optionally passing an app name:
 ```
-yo angular-require [app-name]
+yo psycnet [app-name]
 ```
 
 `grunt build` must be run before anything else due to dependency population in the RequireJS config and the like (this will be fixed in a future version).
@@ -31,25 +31,25 @@ Run `grunt` for building and `grunt serve` for preview
 
 Available generators:
 
-* [angular-require](#app) (aka [angular-require:app](#app))
-* [angular-require:controller](#controller)
-* [angular-require:directive](#directive)
-* [angular-require:filter](#filter)
-* [angular-require:route](#route)
-* [angular-require:service](#service)
-* [angular-require:provider](#service)
-* [angular-require:factory](#service)
-* [angular-require:value](#service)
-* [angular-require:constant](#service)
-* [angular-require:decorator](#decorator)
-* [angular-require:view](#view)
+* [psycnet](#app) (aka [psycnet:app](#app))
+* [psycnet:controller](#controller)
+* [psycnet:directive](#directive)
+* [psycnet:filter](#filter)
+* [psycnet:route](#route)
+* [psycnet:service](#service)
+* [psycnet:provider](#service)
+* [psycnet:factory](#service)
+* [psycnet:value](#service)
+* [psycnet:constant](#service)
+* [psycnet:decorator](#decorator)
+* [psycnet:view](#view)
 
 ### App
-Sets up a new AngularJS-RequireJS app, generating all the boilerplate you need to get started. The app generator also optionally installs Bootstrap and additional AngularJS modules, such as angular-resource (installed by default). All files created will be in the RequireJS/AMD format, and therefore all will be within "define" blocks.
+Sets up a new Psycnet app, generating all the boilerplate you need to get started. The app generator also optionally installs Bootstrap and additional AngularJS modules, such as angular-resource (installed by default). All files created will be in the RequireJS/AMD format, and therefore all will be within "define" blocks.
 
 Example:
 ```bash
-yo angular-require
+yo psycnet
 ```
 
 ### Route
@@ -57,7 +57,7 @@ Generates a controller and view, and configures a route in `app/scripts/app.js` 
 
 Example:
 ```bash
-yo angular-require:route myroute
+yo psycnet:route myroute
 ```
 
 Produces `app/scripts/controllers/myroute.js`:
@@ -89,7 +89,7 @@ Generates a controller in `app/scripts/controllers`.
 
 Example:
 ```bash
-yo angular-require:controller user
+yo psycnet:controller user
 ```
 
 Produces `app/scripts/controllers/user.js`:
@@ -107,7 +107,7 @@ Generates a directive in `app/scripts/directives`.
 
 Example:
 ```bash
-yo angular-require:directive myDirective
+yo psycnet:directive myDirective
 ```
 
 Produces `app/scripts/directives/myDirective.js`:
@@ -132,7 +132,7 @@ Generates a filter in `app/scripts/filters`.
 
 Example:
 ```bash
-yo angular-require:filter myFilter
+yo psycnet:filter myFilter
 ```
 
 Produces `app/scripts/filters/myFilter.js`:
@@ -153,7 +153,7 @@ Generates an HTML view file in `app/views`.
 
 Example:
 ```bash
-yo angular-require:view user
+yo psycnet:view user
 ```
 
 Produces `app/views/user.html`:
@@ -166,7 +166,7 @@ Generates an AngularJS service.
 
 Example:
 ```bash
-yo angular-require:service myService
+yo psycnet:service myService
 ```
 
 Produces `app/scripts/services/myService.js`:
@@ -187,7 +187,7 @@ Generates an AngularJS service decorator.
 
 Example:
 ```bash
-yo angular-require:decorator serviceName
+yo psycnet:decorator serviceName
 ```
 
 Produces `app/scripts/decorators/serviceNameDecorator.js`:
@@ -281,18 +281,18 @@ When submitting a new feature, add tests that cover the feature.
 
 ## Changelog
 
-Recent changes can be viewed on Github on the [Releases Page](https://github.com/aaronallport/generator-angular-require/releases)
+Recent changes can be viewed on Github on the [Releases Page](https://github.com/ryanrwms/generator-psycnet/releases)
 
 ## License
 
 [BSD license](http://opensource.org/licenses/bsd-license.php)
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aaronallport/generator-angular-require/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ryanrwms/generator-psycnet/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## And finally
 
 Much <3 to the Yeoman community for creating such a great tool!
 
-If you like generator-angular-require, please tell your friends and colleagues. If you are writing about or mentioning generator-angular-require, let me know and I will happily link to it from here.
+If you like generator-psycnet, please tell your friends and colleagues. If you are writing about or mentioning generator-psycnet, let me know and I will happily link to it from here.
 
 Thank you!
