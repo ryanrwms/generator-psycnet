@@ -1,7 +1,7 @@
 {
   "name": "generator-psycnet",
   "version": "0.5.3",
-  "description": "Yeoman generator for APA Psycnet using AngularJS and Require",
+  "description": "Yeoman generator for AngularJS using RequireJS",
   "keywords": [
     "yeoman-generator",
     "scaffold",
@@ -42,8 +42,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "yeoman-generator": "~0.18.0",
-    "bower-requirejs": "1.1.x",
+    "yeoman-generator": "~0.17.0",
+    "bower-requirejs": "~1.1.2",
     "yosay": "^1.0.0",
     "chalk": "^1.0.0",
     "wiredep": "~2.2.0"
@@ -58,7 +58,7 @@
     "grunt-contrib-jshint": "~0.11.0",
     "grunt-conventional-changelog": "~1.2.0",
     "load-grunt-tasks": "~3.1.0",
-    "semver": "4.3.x",
+    "semver": "^4.3.0",
     "underscore.string": "~3.0.0",
     "grunt-release": "~0.12.0"
   },

@@ -87,7 +87,7 @@ var ScriptBase = yeoman.generators.NamedBase.extend({
 
   generateSourceAndTest: function(appTemplate, testTemplate, targetDirectory, skipAdd) {
     // Services use classified names
-    if (this.options.namespace === 'angular-require:service') {
+    if (this.options.namespace === 'psycnet:service') {
       this.cameledName = this.classedName;
     }
 

@@ -9,7 +9,7 @@ var fs      = require('fs');
 var test    = require('./helper');
 var _       = require('underscore.string');
 
-describe('Psycnet generator appPath option', function () {
+describe('Angular-RequireJS generator appPath option', function () {
   var appPath = 'customAppPath';
   var appName = 'App';
   var expected = [
@@ -58,7 +58,7 @@ describe('Psycnet generator appPath option', function () {
       .inDir(path.join(__dirname, 'tmp'), function () {
         var out = [
           '{',
-          '  "generator-psycnet": {',
+          '  "generator-angular-require": {',
           '    "appPath": "' + appPath + '",',
           '    "appName": "' + appName + '"',
           '  }',
@@ -179,7 +179,7 @@ describe('Psycnet generator appPath option', function () {
               done();
             }
           );
-      });
+        });
     });
 
     it('should generate a new view in subdirectories', function (done) {
@@ -202,7 +202,7 @@ describe('Psycnet generator appPath option', function () {
               done();
             }
           );
-      });
+        });
     });
   });
 });
