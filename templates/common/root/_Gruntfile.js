@@ -83,8 +83,8 @@ module.exports = function (grunt) {
               connect.static('.tmp'),
               connect.static('test'),
               connect().use(
-                '/bower_components',
-                connect.static('./bower_components')
+                '/vendors',
+                connect.static('./vendors')
               ),
               connect().use(
                 '/app/styles',
@@ -103,8 +103,8 @@ module.exports = function (grunt) {
               connect.static('.tmp'),
               connect.static('test'),
               connect().use(
-                '/bower_components',
-                connect.static('./bower_components')
+                '/vendors',
+                connect.static('./vendors')
               ),
               connect.static(appConfig.app)
             ];
@@ -188,7 +188,7 @@ module.exports = function (grunt) {
       }<% if (compass) { %>,
       sass: {
       src: ['<%%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /(\.\.\/){1,2}bower_components\//
+        ignorePath: /(\.\.\/){1,2}vendors\//
       }<% } %>
     },
 
@@ -202,7 +202,7 @@ module.exports = function (grunt) {
         imagesDir: '<%%= yeoman.app %>/images',
         javascriptsDir: '<%%= yeoman.app %>/scripts',
         fontsDir: '<%%= yeoman.app %>/styles/fonts',
-        importPath: './bower_components',
+        importPath: './vendors',
         httpImagesPath: '/images',
         httpGeneratedImagesPath: '/images/generated',
         httpFontsPath: '/styles/fonts',
@@ -362,12 +362,12 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.',
           dest: '.tmp',
-          src: ['bower_components/**/*']
+          src: ['vendors/**/*']
         }, {
           expand: true,
           cwd: '.',
           dest: '<%%= yeoman.dist %>',
-          src: ['bower_components/requirejs/*']
+          src: ['vendors/requirejs/*']
         }, {
           expand: true,
           cwd: '.tmp/images',
@@ -376,12 +376,12 @@ module.exports = function (grunt) {
         }<% if (bootstrap) { %>, {
           expand: true,
           cwd: '<% if (!compassBootstrap) {
-              %>bower_components/bootstrap/dist<%
+              %>vendors/bootstrap/dist<%
             } else {
               %>.<%
             } %>',
           src: '<% if (compassBootstrap) {
-              %>bower_components/bootstrap-sass-official/assets/fonts/bootstrap<%
+              %>vendors/bootstrap-sass-official/assets/fonts/bootstrap<%
             } else { %>fonts<% }
             %>/*',
           dest: '<%%= yeoman.dist %>'
@@ -488,7 +488,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
-    'bower:app',
+    'bowerRequirejs:app',
     'replace:test',
     'wiredep',
     'concurrent:test',
@@ -500,7 +500,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
-    'bower:app',
+    'bowerRequirejs:app',
     'replace:test',
     'useminPrepare',
     'concurrent:dist',

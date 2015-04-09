@@ -80,7 +80,7 @@ Produces `app/views/myroute.html`:
 
 Example:
 ```bash
-yo angular:route myRoute --uri=my/route
+yo psycnet:route myRoute --uri=my/route
 ```
 Produces controller and view as above and adds a route to `app/scripts/app.js` with URI `my/route`
 
@@ -180,7 +180,7 @@ define(['angular'], function (angular) {
 });
 ```
 
-You can also do `yo angular:factory`, `yo angular:provider`, `yo angular:value`, and `yo angular:constant` for other types of services.
+You can also do `yo psycnet:factory`, `yo psycnet:provider`, `yo psycnet:value`, and `yo psycnet:constant` for other types of services.
 
 ### Decorator
 Generates an AngularJS service decorator.

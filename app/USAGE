@@ -2,7 +2,7 @@ Description:
     Creates a default AngularJS app
 
 Example:
-    yo angular
+    yo psycnet
 
     This will create:
         Gruntfile.js
@@ -11,7 +11,7 @@ Example:
         app/index.html
         app/scripts/your-app-name-here.js
         app/scripts/controllers/main.js
-        app/bower_components/angular/angular.js
+        app/vendors/angular/angular.js
         app/styles/main.css
         app/views/main.html
 
