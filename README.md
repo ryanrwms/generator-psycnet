@@ -1,6 +1,8 @@
 # Psycnet generator
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/ryanrwms/generator-psycnet.svg?branch=master)](https://travis-ci.org/ryanrwms/generator-psycnet) [![Dependency status](https://david-dm.org/ryanrwms/generator-psycnet/status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=dependencies&view=table) [![Dev Dependency Status](https://david-dm.org/ryanrwms/generator-psycnet/dev-status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=devDependencies&view=table) [![Peer Dependency Status](https://david-dm.org/ryanrwms/generator-psycnet/peer-status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=peerDependencies&view=table)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) 
+
+[![Build Status](https://travis-ci.org/ryanrwms/generator-psycnet.svg?branch=master)](https://travis-ci.org/ryanrwms/generator-psycnet) [![Dependency status](https://david-dm.org/ryanrwms/generator-psycnet/status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=dependencies&view=table) [![Dev Dependency Status](https://david-dm.org/ryanrwms/generator-psycnet/dev-status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=devDependencies&view=table) [![Peer Dependency Status](https://david-dm.org/ryanrwms/generator-psycnet/peer-status.png)](https://david-dm.org/ryanrwms/generator-psycnet#info=peerDependencies&view=table)
 
 > Yeoman generator for APA Psycnet using AngularJS and Require - lets you quickly set up a project with sensible defaults and best practices.
 
